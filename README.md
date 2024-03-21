@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Tasks
 0. I'm not going anywhere. You can print that wherever you want to. I'm here and I'm a Spur for life.
 
@@ -30,3 +31,15 @@ You don’t have to handle the length modifiers
 2. Just because it's in print doesn't mean it's the gospel.
 
 Create a man page for your function.
+=======
+Tasks to do in this project:
+
+0. Write a function that produces output according to a format.
+
+1. Handle the following conversion specifiers:
+d
+i
+
+2. Create a man page for your function.
+
+>>>>>>> master
