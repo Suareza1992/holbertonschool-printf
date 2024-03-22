@@ -9,7 +9,7 @@
  *
  */
 
-int print_char(va_list arg)
+int printchar(va_list arg)
 {
         _putchar(va_arg(arg, int));
 
@@ -19,13 +19,13 @@ int print_char(va_list arg)
 /**
  * print_string - prints a string.
  *
- * @arg: character to print.
+ * @arg: char to print.
  *
  * Return: number of arguments.
  *
  */
 
-int print_string(va_list arg)
+int printstring(va_list arg)
 {
         char *str = va_arg(arg, char *);
         int count = 0;
@@ -53,7 +53,7 @@ int print_string(va_list arg)
  *
  */
 
-int print_percent(__attribute__((unused))va_list arg)
+int printpercent(__attribute__((unused))va_list arg)
 {
         _putchar('%');
 
@@ -68,7 +68,7 @@ int print_percent(__attribute__((unused))va_list arg)
  * Return: Number of characters printed
  */
 
-int print_number(va_list arg)
+int printnumber(va_list arg)
 {
         int count = 0;
         int num = va_arg(arg, int);

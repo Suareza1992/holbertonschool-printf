@@ -15,10 +15,9 @@ typedef struct print_struct
 
 int _putchar(char c);
 int conversion_specifier(const char specifier, va_list arg);
-int print_char(va_list arg);
-int print_string(va_list arg);
-int print_percent(__attribute__((unused))va_list arg);
-int conversion_specifiers(const char specifier, va_list arg);
-int print_number(va_list arg);
+int printchar(va_list arg);
+int printstring(va_list arg);
+int printpercent(__attribute__((unused))va_list arg);
+int printnumber(va_list arg);
 
 #endif

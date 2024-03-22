@@ -10,25 +10,25 @@
 int conversion_specifier(const char specifier, va_list arg)
 {
 printstruct_t carac[] = {
-{"c", printchar},
+                {"c", printchar},
                 {"s", printstring},
-                {"%", printmodule},
-                {"d", printd},
-                {"i", printd},
+                {"%", printpercent},
+                {"d", printnumber},
+                {"i", printnumber},
                 {NULL, NULL},
         };
         int i;
 
-                for (i = 0; carac[i].strchar != NULL; i++)
+        for (i = 0; carac[i].strchar != NULL; i++)
+        {
+                if (specifier == carac[i].strchar[0])
                 {
-                        if (specifier == carac[i].strchar[0])
-                        {
-                                return (carac[i].strf(arg));
-                        }
+                        return (carac[i].strf(arg));
                 }
+        }
 
-                _putchar('%');
-                _putchar(specifier);
+        _putchar('%');
+        _putchar(specifier);
 
-                return (2);
+        return (2);
 }
