@@ -3,7 +3,7 @@
 /**
  * print_char - print a character.
  *
- * @argu: char to print.
+ * @arg: char to print.
  *
  * Return: numbers of arguments.
  *
@@ -11,7 +11,7 @@
 
 int print_char(va_list arg)
 {
-	_putchar(va_arg(argu, int));
+	_putchar(va_arg(arg, int));
 
 	return (1);
 }
